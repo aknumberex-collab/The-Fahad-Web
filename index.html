@@ -1,6 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fahad | Official Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090909;
+    color: #e8dfc9;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --gold: #c6a45c;
+    --dark: #090909;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(9,9,9,0.95);
+    border-bottom: 1px solid #302719;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background:
+    radial-gradient(ellipse at center, #302719 0%, #111 45%, #090909 80%);
+}
+
+.hero small {
+    color: var(--gold);
+    letter-spacing: 6px;
+    font-size: 11px;
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(48px, 10vw, 100px);
+    color: var(--gold);
+    letter-spacing: 8px;
+    margin: 25px 0;
+}
+
+.hero p {
+    color: #aaa;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 13px 35px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--gold);
+    color: #090909;
+}
+
+section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 35px;
+    color: var(--gold);
+    margin-bottom: 35px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    color: #aaa;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.card {
+    border: 1px solid #493a25;
+    padding: 45px 20px;
+    background: linear-gradient(145deg, #17130e, #0b0b0b);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+}
+
+.card h3 {
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.contact p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #302719;
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media(max-width:600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin-left: 9px;
+        font-size: 9px;
+    }
+
+    section {
+        padding: 80px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">THE FAHAD</div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <small>WELCOME TO MY WORLD</small>
+
+    <h1>THE FAHAD</h1>
+
+    <p>CLASSIC MINDSET • MODERN VISION</p>
+
+    <a href="#about" class="btn">DISCOVER MORE</a>
+</div>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        Welcome to my personal space.
+        I believe in creativity, elegance and individuality.
+        This is where my interests, ideas and vision come together.
+    </p>
+</section>
+
+<section id="work">
+    <h2 class="section-title">My World</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Creative</h3>
+            <p>Creativity is the art of expressing individuality.</p>
+        </div>
+
+        <div class="card">
+            <h3>Gaming</h3>
+            <p>Exploring the world of gaming and entertainment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Technology</h3>
+            <p>Discovering innovation and the digital future.</p>
+        </div>
+
+        <div class="card">
+            <h3>Future</h3>
+            <p>Building dreams with ambition and vision.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <p>Thank you for visiting my personal website.</p>
+
+    <a href="mailto:your@email.com" class="btn">
+        CONTACT ME
+    </a>
+</section>
+
+<footer>
+    © 2026 THE FAHAD | ALL RIGHTS RESERVED
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
